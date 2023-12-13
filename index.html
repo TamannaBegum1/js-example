@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="blog site">
+    <meta name="keywords" content="minimo, blog">
+    <meta name="rebots" content="index,follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="tamanna">
+    <title>Javascript</title>
+     <!--font awesome links-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+     <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+   <body class="container">
+    <h1 class="pt-5 text-primary">Hello JavaScript</h1>
+    <!-- Example-01 -->
+      <div>
+        <h2>Example: 01: Change Text</h2>
+        <button class="btn btn-info my-2" id="btn-change-text">Change Text</button>
+        <h5 id="change-text">Text</h5>
+        <hr>
+    </div>
+    <!-- Example-02 -->
+   <div>
+        <h2>Example: 02: Show Date</h2>
+        <button class="btn btn-info my-2" onclick="showDate()">Show Date</button>
+        <h5 id="date">Date</h5>
+        <hr>
+    </div>
+
+    <!-- Example-03 -->
+    <div>
+        <h2>Example: 03: Change emoji</h2>
+        <button class="btn btn-info my-2" onclick="smile()">Smile</button>
+        <button class="btn btn-info mx-2 my-2" onclick="sad()">Sad</button>
+        <br>
+        <img src="imgaes/smile.gif" alt="img" class="img-fluid emoji" id="emoji">
+        <hr>
+    </div>
+
+    <!-- Example-04 -->
+    
+    <div>
+         <h2>Ex-04:Click the button on/off the bulb</h2>
+         <button class="btn btn-dark" onclick="bulbOn()">Bulb on</button>
+         <button class="btn btn-dark" onclick="bulbOff()">Bulb off</button>
+         <img id="img"src="imgaes/bulboff.gif" alt="img">
+     </div>
+      <hr>
+    <!-- Example-05 -->
+
+     <div>
+         <h2>Ex-5:Click the button to add a border to the text</h2>
+         <button class="btn btn-info" onclick="showBorder()"> show border</button>
+         <h3 id="border">Ayesha Binte Abdul Bari</h3>
+     </div>
+     <hr>
+    <!-- Example-06 -->
+    <div>
+        <h2>Ex-6:Click the button to show/hide the text</h2>
+        <button class="btn btn-success" onclick="showText()">Show Text</button>
+        <button class="btn btn-danger" onclick="hideText()">Hide Text</button>
+        <h3 id="showHideText">Ayesha Binte Abdul Bari</h3>
+    </div>
+        <hr>
+
+    <!-- Example-07 Statement -->
+<div>
+    <h2>Ex-7 Click the button to show the (+)result</h2>
+    <button class="btn btn-dark mx-2 my-2 " onclick="showResult()">Show result</button>
+    <h3 id="showR"> Result</h3>
+</div>
+<hr>
+   <!-- Example-08 Statement -->
+<div>
+    <h2>Ex-8 Click the button to show the (-)result</h2>
+    <button class="btn btn-info mx-2 my-2 " onclick="showE()">Show result</button>
+    <h3 id="showE"> Result</h3>
+</div>
+<hr>
+   <!-- Example-09 Statement -->
+<div>
+    <h2>Ex-9 Click the button to show the (+)result</h2>
+    <button class="btn btn-dark mx-2 my-2 " onclick="showA()">Show result</button>
+    <h3 id="showA"> Result</h3>
+</div>
+<hr>
+   <!-- Example-10 Statement (class name output generate)-->
+<div>
+    <h2>Ex-10 usese of classname</h2>
+    <button class="btn btn-dark" onclick="cName()">Output</button>
+    <p class="p">hello</p>
+    <p class="p">hello</p>
+    <p class="p">hello</p>
+</div>
+    <hr>
+   <!-- Example-11 showlength -->
+<div>
+    <h2>Ex-11 Show length</h2>
+    <button class="btn btn-success" onclick="sLength()">output</button>
+    <h1> Ayesha Binte Abdul Bari</h1>
+    <h1> Ayesha Binte Abdul Bari</h1>
+    <h1> Ayesha Binte Abdul Bari</h1>
+    <h1> Ayesha Binte Abdul Bari</h1>
+</div>
+   <hr>
+   <div>
+       <h2> ex-12 font size change</h2>
+       <button class="btn btn-success" type="button" onclick="fontSize()">Click me</button>
+       <p  id="f_size"> Ayesha Binte Abdul Bari</p>
+   </div>
+   <hr>
+   <div>
+       <h2> ex-13 Mode change</h2>
+       <button class="btn btn-success my-2 dark-mode" onclick="modeChange()"> D/L Mode</button>
+       <hr>
+   </div>
+   <div>
+       <h2>ex-14 Formate number two decimals</h2>
+       <h4 id="e-14"> 6.935656</h4>
+       <button class="btn btn-success my-2" onclick="twoDecimal()">two-decimal</button>
+       <h4 id="e-14"> Result</h4>
+   </div>
+   <hr>
+    <div>
+        <h2>Example: 15: Redirect to Another Webpage</h2>
+        <button class="btn btn-success my-2" onclick="redirect()">Redirect</button>
+        <hr>
+    </div>
+    <div>
+        <h2>ex-16 change text align</h2>
+        <button class="btn btn-success my-3" onclick="textAlign()"> Change </button>
+        <h5 id="text-align"> Ayesha Binte Abdul Bari</h5>
+    </div>
+     <hr>
+     <div>
+         <h2> ex 17 font style</h2>
+         <button class="btn btn-success my-2" onclick="fontStyle()">Change font</button>
+         <h5 id="font-style">Ayesha Binte Abdul Bari</h5>
+     </div>
+     <hr>
+      <div>
+          <h2>ex 18 Random number</h2>
+          <button class="btn btn-success my-2" id="b-18">Button</button>
+          <h4 id="r-18">Random Number</h4>
+      </div>
+      <hr>
+       <!-- Example-19 -->
+   <div>
+        <h2>Example: 18: Change Background Color</h2>
+        <button class="btn btn-info my-2" onclick="changeBgColor()">Change bg-color</button>
+        <h5 id="text-bg-color">Change Background Color</h5>
+        <hr>
+    </div>
+     <!-- Example-20 -->
+    <div>
+        <h2>Example: 20: Change Color</h2>
+        <button class="btn btn-success my-2" onclick="changeColor()">Change color</button>
+        <h5 id="text-color">Change Color</h5>
+        <hr>
+    </div>
+     <!-- Example-21 -->
+    <div>
+        <h2>Example: 21: Show Text</h2>
+        <button class="btn btn-info my-2" onclick="showText()">Show</button>
+        <h5 id="show">Hey, there</h5>
+        <hr>
+    </div>
+     <!-- Example-22 -->
+    <div>
+        <h2>Example: 22: Concatenation</h2>
+        <h5>First Name: <span id="f-name">Ayesha</span></h5>
+        <h5>Last Name: <span id="l-name">Binte Abdul Bari</span></h5>
+        <button type="button" class="btn btn-primary my-3" onclick="fullName()">Click to Show Full Name</button>
+        <h5>Full Name: <span id="full-name"></span></h5>
+        <hr>
+    </div>
+     <!-- Example-23 -->
+    <div>
+        <h2>Example: 23: Post New Comment</h2>
+        <div id="comment-container">
+            <p class="fs-4 mb-0">-Ayesha Binte Abdul Bari.</p>
+            <p class="fs-4 mb-0">L-Ayesha Binte Abdul Bari</p>
+            <p class="fs-4 mb-0">L-Ayesha Binte Abdul Bari</p>
+        </div>
+        <textarea name="" id="new-comment" placeholder=" Type Your Comment" class="mt-3" cols="60" rows="3"></textarea>
+        <br>
+        <button type="submit" class="btn btn-primary" id="btn-new-comment">Post</button>
+        <hr>
+    </div>
+     <!-- Example-24 -->
+    <div>
+        <h2 class="pb-3">Example: 24: Type Check</h2>
+        <p id="num-24">5</p>
+        <button class="btn btn-success my-2" id="chk-24">Button</button>
+        <h5 id="type-24">Type</h5>
+        <hr>
+    </div>
+    <!-- Example-25 -->
+    <div>
+        <h2 class="pb-3">Example: 25: Type Check</h2>
+        <p id="text-25">John</p>
+        <button class="btn btn-success my-2" id="chk-25">Button</button>
+        <h5 id="type-25">Type</h5>
+        <hr>
+    </div>
+     <!-- Example-26 -->
+    <div>
+        <h2>Example: 26: Word Reverse</h2>
+        <button class="btn btn-success my-2" onclick="wordReverse()">Click</button>
+        <br>
+        <h5 id="word-reverse">Ayesha</h5>
+        <hr>
+    </div>
+    <!-- Example-27 -->
+    <div>
+        <h2>Example: 27: Show Alert</h2>
+        <button class="btn btn-danger my-2" onclick="showAlert()">Show Alert</button>
+        <hr>
+    </div>
+     <!-- Example-28 -->
+    <div>
+        <h2>Example: 28: Hide Image</h2>
+        <button class="btn btn-info my-2" onclick="hideImage()">Hide</button>
+        <br>
+        <img id="hide-img" src="imgaes/b2.jpg" alt="pic">
+        <hr>
+    </div>
+    <!-- Example-29 -->
+    <div>
+        <h2>Example: 29: Text Underline</h2>
+        <button class="btn btn-danger my-2" onclick="textUnderline()">Change</button>
+        <h5 id="text-underline">Text Underline</h5>
+        <hr>
+    </div>
+      <!-- Example-30 -->
+    <div>
+        <h2>Example: 30: Show Image</h2>
+        <button class="btn btn-info my-2" onclick="showImage()">Show</button>
+        <br>
+        <img id="show-img" src="imgaes/b2.jpg" alt="">
+        <hr>
+    </div>
+     <!-- Example-31 -->
+    <div>
+        <h2>Example: 31: Image Border Radius</h2>
+        <button class="btn btn-info my-2" onclick="imageBorder()">Click</button>
+        <br>
+        <img id="img-border" src="imgaes/b2.jpg" alt="">
+        <hr>
+    </div>
+    <!-- Example-32 -->
+    <div>
+        <h2>Example: 32: Inch to Feet</h2>
+        <input type="number" name="" id="num-32">
+        <span>inch</span>
+        <br>
+        <button class="btn btn-danger my-2" id="in-to-ft">in2ft</button>
+        <h5>Result: <span id="r-32">0</span> ft</h5>
+        <hr>
+    </div>
+    <!-- js script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
